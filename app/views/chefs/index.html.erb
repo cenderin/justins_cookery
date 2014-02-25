@@ -1,0 +1,27 @@
+<h1>Chefs</h1>
+<table>
+	<thead>
+ 		<tr>
+ 		 	 <th>Name</th>
+ 		   <th>Show </th>
+ 		   <th>Speciality</th>
+ 		   <th>show</th>
+ 		   <th>edit</th>
+ 		   <th>delete</th>
+ 		</tr>
+ 	</thead>
+ 	<tbody>
+ 	 		
+ 	   <% @chefs.each do |x| %>
+ 	   <tr>
+ 			<td><%= x.name %></td>
+ 			<td><%= x.show %></td>
+ 			<td><%= x.speciality %></td>
+			<td><%= link_to('Show', chef_path(x.id)) %></td>
+ 			<td><%= link_to('Edit', edit_chef_path(x.id)) %></td>
+ 			<td><%= link_to('Delete', chef_path(x.id), method: :delete, confirm: "are you sure?")%></td>
+ 				
+		</tr>
+	</tbody>
+<% end %>
+</table>

@@ -11,3 +11,30 @@
  *= require_self
  *= require_tree .
  */
+header{
+	background-color: #4E78A0;
+	text-align: center;
+	width: 100%;
+	height: 45px;	
+	box-shadow: black 3px 3px 3px 
+}
+h1{
+	color: black;
+	text-shadow: grey 1.5px 1px 1px
+}
+#main {
+	float: right;
+	margin-top: -140px;
+}
+#main_recipe{
+	float: right;
+	margin-top: -180px;
+}
+th{
+ padding-right: 30px;
+}
+td{
+ padding-right: 30px;
+}
+
+
