@@ -1,4 +1,6 @@
-<h1>Chefs</h1>
+<header><h1>Chefs</h1></header>
+<fieldset>
+
 <table>
 	<thead>
  		<tr>
@@ -13,15 +15,20 @@
  	<tbody>
  	 		
  	   <% @chefs.each do |x| %>
- 	   <tr>
- 			<td><%= x.name %></td>
- 			<td><%= x.show %></td>
- 			<td><%= x.speciality %></td>
-			<td><%= link_to('Show', chef_path(x.id)) %></td>
- 			<td><%= link_to('Edit', edit_chef_path(x.id)) %></td>
- 			<td><%= link_to('Delete', chef_path(x.id), method: :delete, confirm: "are you sure?")%></td>
- 				
-		</tr>
+	 	   <tr>
+	 				<td><%= x.name %></td>
+	 				<td><%= x.show %></td>
+	 				<td><%= x.speciality %></td>
+					<td><%= link_to('Show', chef_path(x.id)) %></td>
+	 				<td><%= link_to('Edit', edit_chef_path(x.id)) %></td>
+	 				<td><%= link_to('Delete', chef_path(x.id), method: :delete, confirm: "are you sure?")%></td>
+				</tr>
+			<% end %>	
 	</tbody>
-<% end %>
 </table>
+
+</fieldset>
+
+
+
+<%= link_to('New', new_chef_path) %>
