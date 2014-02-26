@@ -6,23 +6,19 @@
  		 	 <th>Title</th>
  		   <th>Description </th>
  		   <th>Cook Time</th>
- 		   <th>Instructions</th>
- 		   <th>Ingredients</th>
  		   <th>show</th>
  		   <th>edit</th>
  		   <th>delete</th>
  		</tr>
  	</thead>
- 	<tbody>
+ 	<tbody>	
  	 		
  	   <% @recipes.each do |x| %>
  	   <tr>
  			<td><%= x.title %></td>
  			<td><%= x.description %></td>
  			<td><%= x.cook_time %></td>
- 			<td><%= x.instructions %></td>
- 			<td><%= x.ingredients %></td>
- 	
+
 			<td><%= link_to('Show', recipe_path(x.id)) %></td>
  			<td><%= link_to('Edit', edit_recipe_path(x.id)) %></td>
  			<td><%= link_to('Delete', recipe_path(x.id), method: :delete, confirm: "are you sure?")%></td>

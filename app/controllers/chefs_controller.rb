@@ -37,6 +37,13 @@ class ChefsController < ApplicationController
        end
   end
 
+  def destroy
+     @chef = Chef.find(params[:id])
+     @chef.destroy
+     flash[:notice] = "your chef was destroyed."
+     redirect_to chefs_path
+  end
+
   private
   def chef_params
       params.require(:chef).permit(:name, :show, :speciality, :avatar)

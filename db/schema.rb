@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225171907) do
+ActiveRecord::Schema.define(version: 20140226172220) do
 
   create_table "chefs", force: true do |t|
     t.string   "avatar"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20140225171907) do
     t.text     "ingredients"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "chef_id"
   end
 
 end

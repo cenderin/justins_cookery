@@ -17,7 +17,7 @@ class RecipesController < ApplicationController
 	end
 
   def create
-    @Recipe = Recipe.new(recipe_params)
+    @recipe = Recipe.new(recipe_params)
 
       if @recipe.save
         flash[:success] = "New Recipe has been created."
@@ -37,6 +37,12 @@ class RecipesController < ApplicationController
         render :edit
 
        end
+  end
+  def destroy
+     @recipe = Recipe.find(params[:id])
+     @recipe.destroy
+     flash[:notice] = "your recipe was destroyed."
+     redirect_to recipes_path
   end
 
   private

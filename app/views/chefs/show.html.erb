@@ -1,4 +1,4 @@
-<header><h1>Show Chef <small><%= link_to('edit', edit_chef_path(@chef.id))%></small></h1></header>
+<header><h1>Show Chef </h1></header>
 <br>
 <fieldset>
 <h3>Name: <%=  @chef.name %></h2>
@@ -8,5 +8,5 @@
 
 <h3>Tv show: <%= @chef.show %></h3>
 <div id="main"><%= image_tag(@chef.avatar, style: 'width: 150px') %></div>
-
 </fieldset>
+<%= link_to('edit', edit_chef_path(@chef.id))%>

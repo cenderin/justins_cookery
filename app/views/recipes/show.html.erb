@@ -1,16 +1,17 @@
-<header><h1>Show recipe <small><%= link_to('edit', edit_recipe_path(@recipe.id))%></small></h1></header>
+<header><h1>Show recipe </h1></header>
 <br>
-<fieldset>
-<h3>Name: <%=  @recipe.title %></h2>
+	<fieldset>
+		<h3>Name: <%=  @recipe.title %></h2>
 
-<h3>Description: <%= @recipe.description %></h3>
+		<h3>Description: <%= @recipe.description %></h3>
 
-<h3>Cook Time: <%= @recipe.cook_time %></h3>
+		<h3>Cook Time: <%= @recipe.cook_time %></h3>
 
-<h3>Instructions <%= @recipe.instructions %></h3>
+		<h3>Instructions <%= @recipe.instructions %></h3>
 
-<h3>Ingredients <%= @recipe.ingredients %></h3>
+		<h3>Ingredients <%= @recipe.ingredients %></h3>
 
-<div id="main_recipe"><%= image_tag(@recipe.picture, style: 'width: 150px') %></div>
+		<div id="main"><%= image_tag(@recipe.picture, style: 'width: 150px') %></div>
 
-</fieldset>
+	</fieldset>
+<%= link_to('edit', edit_recipe_path(@recipe.id))%>
