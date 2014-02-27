@@ -8,8 +8,10 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require 'chefs'
+ *= require 'recipes'
  *= require_self
- *= require_tree .
+
  */
 a{
 	color:black;
@@ -27,46 +29,30 @@ header{
 	position: relative;
 	background-image:url("bg.jpg");
 	text-align: left;
-	width: 600;
+	width: 960px;
 	height: 300px;	
-	box-shadow: black 3px 3px 3px
-	-webkit-box-shadow: 0px 2px 18px 4px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 2px 18px 4px rgba(0,0,0,0.75);
 	box-shadow: 0px 2px 18px 4px rgba(0,0,0,0.75);
 }
-context {
-	margin: 0 auto;
-	width: 200px;
-}
+
 h1{
 	font-size: 70px;
-	color: white;
-	text-shadow: grey 3px 3px 3px ;
-
+	
 }
-#main {
-	float: right;
-	margin-top: -63px;
+fieldset{
+	border: none;
 }
-
-th{
- font-size: 30px;
- width: 0%;
- padding-right: 30px;
- padding-left: 0px;
-
+nav{
+	font-size: 60px;
+	li{
+			display: inline-block;
+			color: #D6D6C2;
+			text-shadow: grey 3px 3px 3px ;
+	}
 }
-td{
- border: 1px;
- width: 30%;
- padding-left: 20px;
-}
-body{
-	margin-left: 12%;
-	float: left;
-	width: 800px;
-
-}
-table {
-	margin-top: 10px;
+footer{
+	margin-left: -200px;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	background-color: white;
 }

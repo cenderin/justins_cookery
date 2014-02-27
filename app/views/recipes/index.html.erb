@@ -1,11 +1,11 @@
-<header><h1>Recipes</h1></header>
+<header></header>
 <fieldset>
 <table>
 	<thead>
  		<tr>
  		 	 <th>Title</th>
  		   <th>Description </th>
- 		   <th>Cook Time</th>
+ 		   <th>CookTime</th>
  		   <th>show</th>
  		   <th>edit</th>
  		   <th>delete</th>
@@ -25,11 +25,14 @@
  				
 		</tr>
 	</tbody>
+	<% end %>
 </table>
 </fieldset>
 
-<%= link_to('New', new_recipe_path(x.id))%>
+<%= link_to('New', new_recipe_path)%>
 
-<% end %>
+
+
+
 
 

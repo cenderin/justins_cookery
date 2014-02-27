@@ -1,5 +1,6 @@
 <header><h1>Show recipe </h1></header>
 <br>
+<div id="recipe_show">
 	<fieldset>
 		<h3>Name: <%=  @recipe.title %></h2>
 
@@ -10,8 +11,9 @@
 		<h3>Instructions <%= @recipe.instructions %></h3>
 
 		<h3>Ingredients <%= @recipe.ingredients %></h3>
-
-		<div id="main"><%= image_tag(@recipe.picture, style: 'width: 150px') %></div>
+		<h3>Chef <%= @recipe.chef_id %> </h3>
+		<div id="main"><%= image_tag(@recipe.picture, style: 'width: 200px') %></div>
 
 	</fieldset>
+	</div>
 <%= link_to('edit', edit_recipe_path(@recipe.id))%>

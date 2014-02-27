@@ -1,3 +1,36 @@
 // Place all the styles related to the chefs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+th{
+ font-size: 30px;
+ width: 0%;
+ padding-right: 30px !important;
+}
+td{
+ font-size: 18px;
+ border: 1px;
+ width: 30%;
+ padding-left: 40px;
+}
+h1{
+	font-size: 70px;
+	color: white;
+	text-shadow: grey 3px 3px 3px ;
+}
+	
+#chef_show{
+
+	fieldset{
+
+		#main{
+			float: right;
+			margin-top: -150px;
+		}
+	
+		h3{
+			 padding: 20px;
+			 font-size: 30px;
+			}
+		
+	}
+}

@@ -1,3 +1,32 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+th{
+	padding-right: 30px;
+}
+body{
+	margin-left: 15%;
+	float: left;
+	width: 960px;
+	background-color: #F0EAD6;
+
+}
+table {
+	margin-top: 10px;
+}
+#recipe_show{
+
+	fieldset{
+
+		#main{
+			float: right;
+			margin-top: -425px;
+		}
+	
+		h3{
+			 padding: 20px;
+			 font-size: 30px;
+			}
+		
+	}
+}

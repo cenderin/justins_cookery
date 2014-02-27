@@ -8,10 +8,16 @@
 </head>
 
 <body>
+	<nav>
+		<li>Chefs</li>
+		<li>Recipes</li>
+	</nav>
+
 		<% flash.each do |name, msg| %>
 			<%= content_tag :div, msg, class: name %>
 		<%end%>
 <%= yield %>
 
 </body>
+<footer>test</footer>
 </html>
